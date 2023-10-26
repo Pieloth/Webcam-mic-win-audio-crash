@@ -19,7 +19,7 @@ So the question is now: ***How can we disable this option for the Webcam Mic??**
 * If you disable the Webcam Mic device, in Device Manager, then it won't appear in Windows settings / sound page, thus not possible to disable its Audio enhancements option
 
 **Here is the proposed walkthrough** that did work fine for me, using a **little trick**, to be able to change and disable the Audio enhancements option in Windows settings / sound page for the Webcam Mic:
-•	Plug in the Webcam and be sure to enable it in Device Manager. Windows audio service will then crash, as expected
+* Plug in the Webcam and be sure to enable it in Device Manager. Windows audio service will then crash, as expected
 •	Change a particular setting in Windows audio service, and restart it. It will be able to start, but without sound in computer (this is intented and normal). However, it will be enough to have all audio devices shown in Windows settings / sound page
 •	Open Windows settings / sound page. Select the faulty Webcam Mic, and disable its "Audio enhancements" option (as in image above). Close Windows settings page (as sliders get messy after re-enabling Windows audio service later)
 •	Go back to Windows audio service, and rollback the tweak modification, to re-enable sounds on computer. This time, as the Webcam Mic has its "Audio enhancements" disabled, Windows audio service will run fine!
